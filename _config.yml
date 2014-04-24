@@ -1,5 +1,5 @@
 name: Hardware Hacks Blog
 markdown: redcarpet
 pygments: true
-baseurl: Hardware-Hacks.github.io/
+baseurl: 
 
