@@ -1,0 +1,4 @@
+name: Hardware Hacks Blog
+markdown: redcarpet
+pygments: true
+baseurl: /
