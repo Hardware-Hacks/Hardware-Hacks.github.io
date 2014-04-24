@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Gingerbread
+published: true
 ---
 
 Makes about 15 small cookies.
@@ -26,3 +27,7 @@ Makes about 15 small cookies.
 5. Preheat the oven to 180°C.
 6. Roll the dough out flat and use a shaped cutter to make as many cookies as you like.
 7. Transfer the cookies to a tray and bake in the oven for 15 minutes. Lightly dust the cookies with icing sugar.
+
+### Ignore me im just testing prose.io!
+[Click here to try it!](prose.io)
+
