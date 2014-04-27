@@ -8,6 +8,10 @@ title: Home
         <h1 id="timeline">Timeline</h1>
     </div>
     <ul class="timeline">
+        
+     <!-- Loop Through out page posts and show in timeline -->
+     {%for post in site.post%}
+    
         <li>
           <div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
           <div class="timeline-panel">
@@ -20,6 +24,14 @@ title: Home
             </div>
           </div>
         </li>
+    
+    
+    {%endfor%}
+     
+     <!-- End loop through for each post -->
+     
+        
+        
         <li class="timeline-inverted">
           <div class="timeline-badge warning"><i class="glyphicon glyphicon-credit-card"></i></div>
           <div class="timeline-panel">
