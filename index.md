@@ -16,31 +16,3 @@ title: Home
 
 
 
-<script src="{{site.url}}/js/freewall.js"></script>
-
-<script type="text/javascript">
-			var wall = new freewall("#freewall");
-			wall.reset({
-				selector: '.brick',
-				animate: true,
-				cellW: 200,
-				cellH: 'auto',
-				onResize: function() {
-					wall.fitWidth();
-				}
-			});
-			
-			var images = wall.container.find('.brick');
-			var length = images.length;
-			images.css({visibility: 'hidden'});
-			images.find('img').load(function() {
-				-- length;
-				if (!length) {
-					setTimeout(function() {
-						images.css({visibility: 'visible'});
-						wall.fitWidth();
-					}, 505);
-				}
-			});
-
-		</script>
