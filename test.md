@@ -6,7 +6,7 @@ title: Contact
   <h1>Contact Me!</h1>
   <ul>
 <li>Twitter</li>
-<li>Email</li>
+<li>Email Me</li>
   </ul>
 </div>
 

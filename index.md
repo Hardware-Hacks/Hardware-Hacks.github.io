@@ -14,6 +14,10 @@ title: Home
 
 </div>
 
+
+
+<script src="{{site.url}}/js/freewall.js"></script>
+
 <script type="text/javascript">
 			var wall = new freewall("#freewall");
 			wall.reset({
