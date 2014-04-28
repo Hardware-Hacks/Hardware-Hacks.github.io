@@ -10,7 +10,8 @@ title: Home
     <ul class="timeline">
         
      <!-- Loop Through out page posts and show in timeline -->
-     {%for post in site.post%}
+     <ul>   
+     {% for post in site.posts %}
     
         <li>
           <div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
@@ -26,7 +27,7 @@ title: Home
         </li>
     
     
-    {%endfor%}
+    {% endfor %}
      
      <!-- End loop through for each post -->
      
