@@ -13,8 +13,8 @@ title: Home
      <ul>   
      {% for post in site.posts %}
     
-        <li>
-          <div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
+        <li class="timeline-inverted">
+          <div class="timeline-badge warning"><i class="glyphicon glyphicon-check"></i></div>
           <div class="timeline-panel">
             <div class="timeline-heading">
               <h4 class="timeline-title">Mussum ipsum cacilds</h4>
