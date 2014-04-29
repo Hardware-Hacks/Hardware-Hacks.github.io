@@ -10,10 +10,18 @@ title: Home
     <ul class="timeline">
         
      <!-- Loop Through out page posts and show in timeline -->
-  {% assign left = true %} 
+  	<!-- Assign initial variable to give us a left post -->
+  	{% assign left = true %} 
      {% for post in site.posts %}
     
-    {% if left = true %}<li>{% assign left = false %}{% else %}<li class="timeline-inverted">{% assign left = true %}{% endif %}
+    <!-- if assigned value to left is true then show post on left otherwise show on right -->
+    {% if left = true %}
+    	<li>
+    	{% assign left = false %}
+    {% else %}
+    	<li class="timeline-inverted">
+    	{% assign left = true %}
+    {% endif %}
         
           <div class="timeline-badge warning"><i class="glyphicon glyphicon-check"></i></div>
           <div class="timeline-panel">
