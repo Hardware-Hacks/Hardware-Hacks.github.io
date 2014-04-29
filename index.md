@@ -15,7 +15,7 @@ title: Home
      {% for post in site.posts %}
     
     <!-- if assigned value to left is true then show post on left otherwise show on right -->
-    {% if left = true %}
+    {% if left %}
     	<li>
     	{% assign left = false %}
     {% else %}
