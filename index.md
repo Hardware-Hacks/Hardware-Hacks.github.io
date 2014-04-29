@@ -8,13 +8,9 @@ title: Home
         <h1 id="timeline">Timeline</h1>
     </div>
     <ul class="timeline">
-        
-     <!-- Loop Through out page posts and show in timeline -->
-  	<!-- Assign initial variable to give us a left post -->
-  	{% assign left = true %} 
+    {% assign left = true %} 
      {% for post in site.posts %}
     
-    <!-- if assigned value to left is true then show post on left otherwise show on right -->
     {% if left %}
     	<li>
     	{% assign left = false %}
@@ -26,11 +22,11 @@ title: Home
           <div class="timeline-badge warning"><i class="glyphicon glyphicon-check"></i></div>
           <div class="timeline-panel">
             <div class="timeline-heading">
-              <h4 class="timeline-title">Mussum ipsum cacilds</h4>
-              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 11 hours ago via Twitter</small></p>
+              <h4 class="timeline-title">{% post.title %}</h4>
+              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> {% post.date %}</small></p>
             </div>
             <div class="timeline-body">
-              <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+              <p>{% post.body | truncate: 200 %}</p>
             </div>
           </div>
         </li>
