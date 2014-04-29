@@ -26,7 +26,7 @@ title: Home
               <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> {% post.date %}</small></p>
             </div>
             <div class="timeline-body">
-              <p>{% post.body | truncate: 200 %}</p>
+              <p>{% post.excerpt %}</p>
             </div>
           </div>
         </li>
