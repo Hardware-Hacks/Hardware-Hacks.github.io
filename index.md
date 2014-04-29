@@ -10,10 +10,11 @@ title: Home
     <ul class="timeline">
         
      <!-- Loop Through out page posts and show in timeline -->
-   
+  {% assign left = true %} 
      {% for post in site.posts %}
     
-        <li class="timeline-inverted">
+    {% if left = true %}<li>{% assign left = false %}{% else %}<li class="timeline-inverted">{% assign left = true %}{% endif %}
+        
           <div class="timeline-badge warning"><i class="glyphicon glyphicon-check"></i></div>
           <div class="timeline-panel">
             <div class="timeline-heading">
