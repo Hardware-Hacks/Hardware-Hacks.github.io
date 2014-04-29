@@ -22,11 +22,11 @@ title: Home
           <div class="timeline-badge warning"><i class="glyphicon glyphicon-check"></i></div>
           <div class="timeline-panel">
             <div class="timeline-heading">
-              <h4 class="timeline-title">{% post.title %}</h4>
+              <h4 class="timeline-title">{{ post.title }}</h4>
               <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> {% post.date %}</small></p>
             </div>
             <div class="timeline-body">
-              <p>{% post.excerpt %}</p>
+              <p>{{ post.excerpt }}</p>
             </div>
           </div>
         </li>
