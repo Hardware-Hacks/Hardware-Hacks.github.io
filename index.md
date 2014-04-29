@@ -10,7 +10,7 @@ title: Home
     <ul class="timeline">
         
      <!-- Loop Through out page posts and show in timeline -->
-     <ul>   
+   
      {% for post in site.posts %}
     
         <li class="timeline-inverted">
