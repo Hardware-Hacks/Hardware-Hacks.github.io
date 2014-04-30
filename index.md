@@ -29,18 +29,15 @@ title: Home
               <p>{{ post.excerpt }}</p>
               <p><a href="{{ post.url }}">Read more...</a></p>
             <!-- Post tags -->
-            {% if post.tags_count > 0 %}
-			    <div class="page-tags">
-			        <div class="padbottom">
-			            <i class="icon-tag"></i>
-			            <div class="page-tag-background">
+           <!--  {% if post.tags_count > 0 %}
+			 --> 
 			                {% for tag in post.tags %}
-			                    <span class="page-tag" data-id="{{ tag.id }}"><a href="{{ tag.url }}">{{ tag.name }}</a></span>
+			                    <span class="page-tag">{{ tag }}</span>
 			                {% endfor %}
-			            </div>
-			        </div>
-			    </div>
-			{% endif %}
+			            
+			        
+			    
+			<!-- {% endif %} -->
 
 
             <!-- End post tags -->
