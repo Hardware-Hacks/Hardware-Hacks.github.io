@@ -27,6 +27,7 @@ title: Home
             </div>
             <div class="timeline-body">
               <p>{{ post.excerpt }}</p>
+              <p><a href="{{ post.url }}">Read more...</a></p>
             </div>
           </div>
         </li>
