@@ -32,7 +32,7 @@ title: Home
            <!--  {% if post.tags_count > 0 %}
 			 --> 
 			                {% for tag in post.tags %}
-			                    <span class="page-tag">{{ tag }}</span>
+			                    <p>{{ tag }}</p>
 			                {% endfor %}
 			            
 			        
@@ -41,7 +41,7 @@ title: Home
 
 
             <!-- End post tags -->
-            
+   	         
             </div>
           </div>
         </li>
